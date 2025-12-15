@@ -3,7 +3,7 @@
 This repository contains client-facing notebooks that demonstrate how to onboard with the Neuralk API and run NICL on sample datasets. Use these notebooks as hands-on guides to create an organization, add users, and compare NICL to a traditional baseline.
 
 ## Quickstart
-- Open in Colab: [organisation_creation_and_inference_first_example.ipynb](https://colab.research.google.com/github/NeuralkAI/neuralk-notebooks/blob/main/organisation_creation_and_inference_first_example.ipynb)  
+- Open in Colab: [organisation_creation_and_inference_first_example.ipynb](https://colab.research.google.com/github/NicolasNeuralkAI/neuralk-notebooks/blob/main/organisation_creation_and_inference_first_example.ipynb)  
 - Run all cells in order; credentials are defined inside the notebook for demo convenience.
 
 ## Notebook overview

@@ -1,28 +1,30 @@
 # Neuralk API Notebook Examples
 
-This repository contains client-facing notebooks that demonstrate how to onboard with the Neuralk API and run NICL on sample datasets. Use these notebooks as hands-on guides to create an organization, add users, and compare NICL to a traditional baseline.
+This repository contains client-facing notebooks that demonstrate how to use the Neuralk API and run NICL on sample datasets.
 
-## Quickstart
-- Open in Colab: [organisation_creation_and_inference_first_example.ipynb](https://colab.research.google.com/github/NicolasNeuralkAI/neuralk-notebooks/blob/main/organisation_creation_and_inference_first_example.ipynb)  
-- Run all cells in order; credentials are defined inside the notebook for demo convenience.
+## Getting Started
 
-## Notebook overview
-- `organisation_creation_and_inference_first_example.ipynb`
-  - Install dependencies once.
-  - (Guarded) create an organization and first admin user with Neuralk.
-  - Authenticate with the Neuralk client and inspect organization details.
-  - Optionally add a second user.
-  - Synthetic quickstart: deterministic NICL classification example.
-  - Real dataset demo (OpenML) with preprocessing via `TableVectorizer`.
-  - Benchmark comparison against an XGBoost baseline.
+1. Get your API key at https://prediction.neuralk-ai.com/register (format: `nk_live_xxxxxxxxxxxx`)
+2. Set your API key:
+   ```bash
+   export NEURALK_API_KEY=nk_live_your_api_key_here
+   ```
+3. Open a notebook in Colab and run all cells
+
+## Notebooks
+
+- `introduction-to-neuralk-api.ipynb` - [Open in Colab](https://colab.research.google.com/github/NicolasNeuralkAI/neuralk-notebooks/blob/main/introduction-to-neuralk-api.ipynb)
+  - **Recommended starting point** for using NICLClassifier with API key auth.
+  - Demonstrates NICLClassifier on synthetic and real-world housing data.
+  - Shows preprocessing pipeline with TableVectorizer and scaling.
+  - Compares NICL performance against gradient boosting baseline.
+
+- `on-premise-server.ipynb` - [Open in Colab](https://colab.research.google.com/github/NicolasNeuralkAI/neuralk-notebooks/blob/main/on-premise-server.ipynb)
+  - For on-premise deployment scenarios.
 
 ## Running locally
+
 1. Ensure Python 3.10+ and Jupyter are available.
-2. Open the notebook in your preferred environment.
-3. Fill the credential variables (`ACCESS_CODE`, `ORGANIZATION_NAME`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`).
-4. Flip the guard flags (`RUN_ACCOUNT_CREATION`, `RUN_USER_CREATION`) only when you want to provision resources.
-5. Execute cells top-to-bottom.
-
-## Notes
-- The notebook keeps secrets inline for demo purposes; avoid committing real credentials to shared repos.
-
+2. Install the SDK: `pip install neuralk`
+3. Set your API key: `export NEURALK_API_KEY=nk_live_...`
+4. Open the notebook and execute cells top-to-bottom.

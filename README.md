@@ -19,6 +19,10 @@ This repository contains client-facing notebooks that demonstrate how to use the
   - Shows preprocessing pipeline with TableVectorizer and scaling.
   - Compares NICL performance against gradient boosting baseline.
 
+- `explainability-with-neuralk.ipynb` - [Open in Colab](https://colab.research.google.com/github/NicolasNeuralkAI/neuralk-notebooks/blob/main/explainability-with-neuralk.ipynb)
+  - Interpret and explain NICLClassifier predictions using prediction probabilities, confidence analysis, permutation importance, and SHAP values.
+  - Uses the housing dataset to demonstrate model-agnostic explainability techniques.
+
 - `on-premise-server.ipynb` - [Open in Colab](https://colab.research.google.com/github/NicolasNeuralkAI/neuralk-notebooks/blob/main/on-premise-server.ipynb)
   - For on-premise deployment scenarios.
 
